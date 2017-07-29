@@ -3,13 +3,16 @@
 def checkprime(target,denom):
 	flag=True
 	limit=target
-	while denom < limit:
+	#print ("limit is ", limit)
+	while denom <= limit:
 		if (target % denom) ==0:
 			#print (number, " is not prime")
 			flag=False
 			break
 		denom=denom+1
-		limit=limit//denom
+		limit=target//denom
+	#print ("limit is ", limit)
+	#print ("denom is ", denom)
 	if flag==False:
 		return False
 	else:
