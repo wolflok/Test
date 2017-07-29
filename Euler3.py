@@ -10,7 +10,7 @@ import prime
 
 primeList = []
 for i in range(1,200000):
-	if prime.checkprime(i,2) == True:
+	if prime.checkprime(i,2):
 		primeList.append(i)
 
 #for i in range(1,len(primeList)):
